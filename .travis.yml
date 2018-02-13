@@ -1,0 +1,13 @@
+language: generic
+
+install: skip
+source: skip
+
+deploy:
+  provider: s3
+  access_key_id: a-key
+  secret_access_key: s-key
+  bucket: "or562-web-bucket"
+  skip_cleanup: true
+  region: us-west-2
+  acl: public_read
